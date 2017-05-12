@@ -54,10 +54,12 @@ ul {
     }
 }
 
+.profile {
+    display: flex;
+    margin-top: 1em;
+}
+
 .social_network {
-    border-radius: 0.8em;
-    background: black;
-    display: inline-block;
     height: 1.6em;
     margin-right: 0.5em;
     width: 1.6em;
@@ -65,16 +67,35 @@ ul {
 }
 
 .social_network.linkedin {
-    background: #007bb6;
+    background: #0077b5;
+}
+
+.social_network.github {
+    background: gray;
 }
 
 .social_network.facebook {
-    background: #0253a2;
+    background: #4867aa;
 }
 
-.social_network span {
+.social_network.linkedin i,
+.social_network.facebook i,
+.social_network.github i {
     color: white;
-    font-size: 0.8em;
-    font-weight: bolder;
-    font-family: Geneva, Verdana, sans-serif;
+}
+
+.social_network.github i {
+    color: white;
+    font-size: 1.6em;
+}
+
+.social_network.linkedin i {
+    padding-top: 0.15em;
+    font-size: 1.2em;
+}
+
+.social_network.facebook i {
+    padding-left: 0.5em;
+    padding-top: 0.4em;
+    font-size: 1.2em;
 }
